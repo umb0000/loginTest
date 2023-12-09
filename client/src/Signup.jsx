@@ -41,7 +41,7 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/join', {name, password})
+        axios.post('http://localhost:5001/join', {name, password})
         .then(result => console.log(result), alert("가입 완료!"))
         .catch(err=> console.log(err))
         if(result.data === "Success") {
